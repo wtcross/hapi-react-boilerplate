@@ -17,7 +17,7 @@
     "server": "nodemon index.js",
     "client": "NODE_PATH=./src/ npm start --prefix client",
     "webpack:prod": "rm -rf ./client/build | NODE_ENV=production webpack --env=production",
-    "build:prod": "npm run webpack:production -- --progress --profile --colors",
+    "build:prod": "npm run webpack:prod -- --progress --profile --colors",
     "postinstall": "npm run build:prod"
   },
   "dependencies": {
